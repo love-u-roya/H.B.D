@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- First Section: Heart Animation -->
+    <section class="heart-section" id="heart-section">
+        <div class="heart-container" id="heart-container">
+            <svg viewBox="0 0 600 552" style="display: none;">
+                <path d="M300,107.77C284.68,55.67,239.76,0,162.31,0,64.83,0,0,82.08,0,171.71c0,.48,0,.95,0,1.43-.52,19.5,0,217.94,299.87,379.69v0l0,0,.05,0,0,0,0,0v0C600,391.08,600.48,192.64,600,173.14c0-.48,0-.95,0-1.43C600,82.08,535.17,0,437.69,0,360.24,0,315.32,55.67,300,107.77" fill="#800020"/>
+            </svg>
+        </div>
+        <div class="section-title">
+            <h1>Happy Birthday Roya</h1>
+            <p>With all my love ❤️</p>
+        </div>
+    </section>
+
+    <!-- Second Section: Photo Gallery -->
+    <section class="photos-section" id="photos-section">
+        <div class="container">
+            <h2>Our Memories Together</h2>
+            <p class="section-subtitle">Every moment captured, every memory cherished ❤️</p>
+            <div class="photo-gallery" id="photo-gallery">
+                <!-- Photos will be added here -->
+                <div class="photo-placeholder">
+                    <div class="placeholder-icon">📷</div>
+                    <p>Add your photos here</p>
+                    <span class="placeholder-hint">Click to upload memories</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">×</button>
+            <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous photo">‹</button>
+            <button class="lightbox-next" id="lightbox-next" aria-label="Next photo">›</button>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="Photo">
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS Letter Section -->
+    <section class="cssletter">
+      <div class="envelope">
+        <button class="heart" id="openEnvelope" aria-label="Open Envelope">
+          <span class="heart-text">Open</span>
+        </button>
+        <div class="envelope-flap"></div>
+        <div class="envelope-folds">
+          <div class="envelope-left"></div>
+          <div class="envelope-right"></div>
+          <div class="envelope-bottom"></div>
+        </div>
+      </div>
+      <div class="letters">
+        <blockquote class="letter center" id="1" tabindex="0">
+          <button class="closeLetter" title="Close letter">Close letter</button>
+          <p>From the moment our paths intertwined, you filled my days with laughter and my nights with sweet dreams. Your love is a constant melody that plays softly in my heart, making every moment magical.</p>
+          <cite>Amelia Rose</cite>
+        </blockquote>
+      </div>
+    </section>
+
+ 
+
+    <script src='https://cdn.jsdelivr.net/npm/three@0.136.0/build/three.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/three@0.136.0/examples/js/controls/OrbitControls.js'></script>
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
